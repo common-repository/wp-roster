@@ -1,0 +1,63 @@
+.mobile-only {
+    display: none !important;
+}
+.roster-header .roster-header-left{
+    background: transparent !important;
+}
+
+form, button, input, select, textarea, .navigation, .main-navigation, .social-navigation, .sidebar, .content-bottom-widgets, .header-image, .page-links, .edit-link, .comment-respond, .comment-edit-link, .comment-reply-link, .comment-metadata .edit-link, .pingback .edit-link {
+    display: inherit !important;
+}
+
+.roster-header-right {
+    display: none !important;
+}
+
+.roster-main-menu li:not(.menu-item-roster){
+    display: none !important;
+}
+
+.now-icon {
+    display: none !important;
+}
+
+.date-label-tooltip {
+    display: none !important;
+}
+
+.unavailable-rows {
+    display: none;
+}
+
+body, button, input, select, textarea {
+    font-size: 12px !important;
+}
+
+#roster-container select.roster-data-input {
+    height: 23px !important;
+}
+
+.roster-header {
+    min-height: 60px !important;
+    padding: 10px 30px !important;
+}
+
+#roster-container thead th {
+    padding-top: 2px !important;
+    padding-bottom: 2px !important;
+}
+
+.roster-header .roster-main-menu .active {
+    color: black !important;
+}
+#roster-container table .duplicate-item {
+    color: black !important;
+}
+
+ #roster-container table thead tr {
+    background-color: black !important;
+}
+
+.now {
+    filter: none !important;
+}

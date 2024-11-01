@@ -1,0 +1,1569 @@
+.roster-header {
+    background: white;
+    min-height: 80px;
+    display: block;
+    width: 100%;
+    padding: 15px 30px;
+    box-shadow: 0px 0px 4px 0px rgba(0,0,0,.1);
+}
+
+body:before,body:after {
+    display: none !important;
+}
+
+.roster-logo {
+    max-height: 50px;
+}
+
+
+body, input, select, input::placeholder, textarea {
+    font-family: 'Open Sans', sans-serif !important;
+}
+
+.alertify-logs {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    z-index: 99999 !important;
+}
+
+h1 {
+    font-size: 24px;
+    line-height: normal;
+    vertical-align: middle;
+    display: table-cell;
+}
+
+.roster-header-left {
+    float: left;
+    display: table;
+    height: 100%;
+}
+
+.roster-header-right {
+    float: right;
+padding-top:2px;
+}
+
+
+.roster-main-menu {
+    margin: 0px;
+}
+
+.roster-main-menu li,.roster-right-menu li {
+    display: inline-block;
+    list-style: none;
+}
+
+.roster-main-menu li {
+    margin-right: 20px;
+    margin-top: 5px;
+}
+
+.roster-right-menu li {
+    margin-left: 20px;
+    vertical-align: middle;
+    height: 44px;
+}
+
+
+
+.roster-main-menu a {
+    font-size: 20px;
+    color: #231f20;
+    font-weight: 300;
+}
+
+
+.roster-main-menu .active {
+    font-weight: 800;
+}
+
+.roster-right-menu i {
+    font-size: 24px;
+  
+}
+
+.roster-right-menu a i {
+    margin-top: 10px;
+    display: block;
+}
+
+
+
+.roster-right-menu {
+    margin: 0px;
+}
+
+.save-settings {
+    text-transform: capitalize;
+    border-radius: 22px;
+    height: 44px;
+    padding: 0px 14px 0px 11px;
+    font-weight: 300;
+    outline: 0 !important;
+    border: 0 !important;
+}
+
+.save-settings span {
+    top: -5px;
+    position: relative;
+}
+
+
+
+
+.save-settings .icon-refresh, .getting-updated-statuses {
+    -webkit-animation-name: spin;
+    -webkit-animation-duration: 2000ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: spin;
+    -moz-animation-duration: 2000ms;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -ms-animation-name: spin;
+    -ms-animation-duration: 2000ms;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+    animation-name: spin;
+    animation-duration: 2000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    display: inline-block;
+}
+
+@-ms-keyframes spin {
+    from { -ms-transform: rotate(360deg); }
+    to { -ms-transform: rotate(0deg); }
+}
+@-moz-keyframes spin {
+    from { -moz-transform: rotate(360deg); }
+    to { -moz-transform: rotate(0deg); }
+}
+@-webkit-keyframes spin {
+    from { -webkit-transform: rotate(360deg); }
+    to { -webkit-transform: rotate(0deg); }
+}
+@keyframes spin {
+    from {
+        transform:rotate(360deg);
+    }
+    to {
+        transform:rotate(0deg);
+    }
+}
+
+.alertify-logs > div {
+    border-radius: 4px !important;
+    bottom: 5px !important;
+}
+
+.user-profile-image {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 4px 0px rgba(0,0,0,.3);
+    object-fit: cover;
+}
+
+
+
+ 
+
+
+
+body {
+    background: #f1f2f2 !important;
+}
+
+.roster-container {
+    padding: 30px;
+    vertical-align: top;
+
+}
+
+.save-history, .notification-log {
+    margin: 0px !important;   
+}
+
+.save-history li, .notification-log li, .attendance-statistics-listing li {
+    background: #fff;
+    /* margin-bottom: 7px; */
+    list-style: none;
+    padding: 10px;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,.05);
+    border-radius: 2px;
+    text-align: center;
+}
+
+.save-history span {
+    width: 20%;
+    display: inline-block;
+}
+
+.notification-log span {
+    width: 13.7%;
+    display: inline-block;
+}
+
+.list-header {
+    color: white;
+    font-weight: 700;
+}
+
+.save-history li:nth-child(odd), .notification-log li:nth-child(odd), .attendance-statistics-listing li:nth-child(odd) {
+    background: #f1f2f2;
+}
+
+
+
+@media screen and (min-width: 601px) {
+.teams-menu-navigation {
+    background: #fff;
+}}
+
+
+
+@media screen and (max-width: 600px) {
+
+    .save-history span {
+        display: block;
+        width: 100%;
+    }
+
+    .teams-menu-navigation li {
+        border-width: 0px !important;
+        display: block !important;
+        margin-bottom: 8px;
+        border-radius: 4px;
+        box-shadow: 0px 0px 5px 0px rgba(0,0,0,.05);
+        background: white;
+    }
+
+
+}  
+
+@media screen and (max-width: 768px) {
+
+    .notification-log span {
+        display: block;
+        width: 100%;
+    }
+
+    .roster-container .item-filter-notifications {
+        width: 100% !important;
+        display: block !important;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .search-icon-notifications {
+        top: -45px !important;
+    }
+
+
+
+}  
+
+.secondary-button {
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 20px;
+    text-transform: capitalize;
+    background: transparent !important;
+    padding: 10px 14px;
+    outline: 0 !important;
+    font-weight: 400;
+}
+
+.alertify .cancel, .alertify .ok {
+    border-width: 2px !important;
+    border-style: solid;
+    font-weight: 600 !important;
+    height: auto !important;
+    border-radius: 5px !important;
+    text-shadow: none !important;
+    line-height: normal !important;
+    text-transform: uppercase !important;
+    box-shadow: none !important;
+    outline: 0px !important;
+    padding: 10px 20px !important; 
+    display: inline-block;
+    text-decoration: none !important;
+    letter-spacing: 3px !important;
+}
+
+.alertify .ok {
+    color: white !important;
+}
+
+.alertify a {
+    text-decoration: none;
+}
+
+.alertify .alert .msg, .alertify .dialog .msg {
+    font-weight: 300;
+    font-size: 20px;
+    padding-top: 0px;
+}
+
+.alertify .alert nav, .alertify .dialog nav {
+    text-align: left;
+}
+
+.alertify .alert>*, .alertify .dialog>* {
+    padding: 17px;
+}
+.alertify code {
+    font-size: 20px;
+    font-weight: 900 !important;
+}
+
+.dialog > div {
+    border-radius: 4px;
+}
+
+.roster-container-left {
+    display: inline-block;
+    width: 30%;
+}
+
+.roster-container-right {
+    display: inline-block;
+    width: 70%;
+    padding-left:0px !important;
+}
+
+.feature-box {
+    padding: 30px;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    color: white;
+}
+.feature-box h2 {
+    font-weight: 700;
+    font-size: 24px;
+    /* margin-bottom: 15px; */
+}
+
+.feature-box span {
+    margin-top: 15px;
+    display: block;
+}
+
+.feature-box label, .roster-container-left-run-sheet label {
+    font-weight: 300;
+    margin-bottom: 2px;
+    display: block;
+    color: white;
+}
+.feature-box input, .feature-box textarea {
+    border-width: 0px !important;
+    border-radius: 3px !important;
+}
+
+.feature-box button {
+    background: transparent !important;
+    border-color: white !important;
+    color: white !important;
+}
+
+.dates-listing {
+    clear: both;
+    margin: 0px !important;
+}
+
+.dates-listing li {
+    background: #fff;
+    /* margin-bottom: 7px; */
+    list-style: none;
+    padding: 10px 15px;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,.05);
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+#attendance-listing {
+    margin: 0px !important;
+}
+
+.dates-listing li span {
+    display: inline-block;
+}
+
+.delete-date-section {
+    float: right;
+}
+
+.delete-date {
+    /* font-size: 24px; */
+    cursor: pointer;
+    position: relative;
+    top: 9px;
+    right: -15px;
+}
+
+.dates-listing label, .dates-listing input {
+    display: inline-block !important;
+}
+
+.dates-listing label {
+    padding-right: 8px;
+}
+
+.dates-listing input {
+    width: 150px !important;
+    background: #f1f2f2 !important;
+    border-radius: 3px !important;
+    border: 1px solid #e9eaea !important;
+    
+}
+
+.dates-listing span {
+    padding-right: 15px;
+}
+
+.description-field input {
+    width: 200px !important;
+}
+
+.fixed-div {
+    position: fixed;
+    width: calc(30% - 60px);
+}
+
+@media screen and (max-width: 1080px) {
+    .fixed-div {
+        position: inherit;
+        width: inherit;
+    }   
+
+    .roster-container-left,.roster-container-right {
+        display: block;
+        width: 100%;
+    }
+
+    .roster-container-right {
+        padding-left: 30px !important;
+    }
+
+    .roster-container-right {
+        margin-top: -60px;
+
+    }
+
+}   
+
+@media screen and (max-width: 800px) {
+    .dates-listing li span {
+        display: block;
+        padding-right: 0px !important;
+        margin-bottom: 10px;
+    }
+
+
+    .delete-date-section {
+        float: none;
+    }
+
+    .dates-listing input {
+        width: 100% !important;
+    }
+
+    .delete-date {
+        right: 0px;
+    }
+}
+
+/* .date-time-field {
+    position: relative;
+}
+
+.bootstrap-datetimepicker-widget{
+    display: block !important; 
+    opacity: 1 !important;
+
+} */
+
+.flatpickr-months .flatpickr-month {
+    overflow: visible !important;
+ 
+}
+
+.flatpickr-calendar {
+    border-radius: 4px !important;
+
+}
+
+.repeat-section label, .repeat-section input, .repeat-section select {
+    display: inline-block !important;
+    margin-right: 5px !important;
+
+}
+
+.repeat-section .number-input {
+    width: 53px !important;
+}
+
+.feature-box select, .date-select {
+    height: 42px;
+    position: relative;
+    top: -1px !important;
+    border-width: 0px !important;
+    width: 100%;
+}
+
+/* teams */
+.roster-container-left-teams {
+    display: inline-block;
+    width: 25%;
+}
+
+.roster-container-right-teams {
+    display: inline-block;
+    width: 75%;
+    padding-left:0px !important;
+}
+
+/* notifications */
+.roster-container-right-notifications {
+    display: inline-block;
+    width: 60%;
+    padding-left:0px !important;
+}
+
+.roster-container-left-notifications {
+    display: inline-block;
+    width: 40%;
+}
+
+/* run sheet */
+.roster-container-right-run-sheet {
+    display: inline-block;
+    /* width: 70%; */
+    /* padding-left:0px !important; */
+    /* margin-left: 30%; */
+    width: 70%;
+}
+
+.roster-container-left-run-sheet {
+    display: inline-block;
+    width: 30%;
+}
+
+.type-select {
+    width: 100%;
+}
+
+.expandable-section-activate {
+    cursor: pointer;
+}
+
+.expandable-section {
+    display: none;
+}
+
+.user-listing {
+    margin: 0px !important;
+    clear: both;
+}
+
+.user-listing li, .user-attendance-edit li {
+    background: #fff;
+    /* margin-bottom: 7px; */
+    list-style: none;
+    padding: 5px 10px;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,.05);
+    border-radius: 4px;
+    margin-bottom: 5px;
+}
+.user-action-section, .automated-notification-action-section {
+    float: right;
+}
+
+.user-action-section i, .automated-notification-action-section i {
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.user-edit-form > span {
+    display: block;
+    margin-top: 10px;
+}
+
+.user-edit-form input, .team-data-edit input, .notification-listing input, .notification-listing textarea, .notification-group-listing input, .notification-group-listing textarea, textarea.custom-field-edit  {
+    background: #f1f2f2 !important;
+    border-radius: 3px !important;
+    border: 1px solid #e9eaea !important;
+}
+
+.user-edit-form .user-edit-form-preference {
+    display: block !important;
+    width: 100% !important;
+    background: #f1f2f2 !important;
+    border: 1px solid #e9eaea;
+    height: 44px;
+}
+
+.user-edit-form-action-buttons i {
+    font-size: 24px;
+    margin-right: 10px;
+    cursor: pointer;
+
+}
+
+.user-edit-form-action-buttons {
+    margin-top: 15px !important;
+    margin-bottom: 3px !important;
+}
+
+.list-section, .member-section {
+    margin: 0px;
+}
+
+
+
+.list-section li, .member-section li {
+    list-style: none;
+}
+
+.list-section i, .member-section i {
+    font-size: 24px;
+    cursor: pointer;
+    margin-right: 10px;
+    position: relative;
+    top: 4px;
+}
+
+.member-field  {
+    width: calc(100% - 102px) !important;
+}
+
+.list-field  {
+    width: calc(50% - 56px) !important;
+}
+.list-field-tooltip {
+    width: calc(50% - 56px) !important;
+    margin-left: 10px;
+}
+
+
+.team-data-edit .list-field  {
+    width: calc(50% - 66px) !important;
+}
+.team-data-edit .list-field-tooltip {
+    width: calc(50% - 65px) !important;
+    margin-left: 10px;
+}
+
+
+
+.builder-action-buttons {
+    display: inline-block !important;
+    width: 102px;
+}
+
+.list-section li:first-child .icon-minus,.member-section li:first-child .icon-minus,.automated-notification-filters-list li:first-child .icon-minus, .automated-notification-filters-list-edit li:first-child .icon-minus {
+    display: none;
+}
+
+.icon-cursor-move {
+    cursor: move !important;
+}
+
+.full-name, .team-name {
+    width: calc(100% - 75px);
+    display: inline-block;
+}
+
+.team-listing, .notification-listing, .notification-group-listing {
+    margin: 0px;
+    clear: both;
+}
+
+.team-listing > li, .notification-listing > li, .notification-group-listing > li {
+    background: #fff;
+    list-style: none;
+    padding: 5px 10px;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,.05);
+    border-radius: 4px;
+    margin-bottom: 5px;
+    min-height: 38px;
+}
+
+
+@media screen and (max-width: 1300px) {
+    .roster-container-left-notifications,.roster-container-right-notifications  {
+        display: block;
+        width: 100%;
+    }
+
+    .roster-container-right-notifications {
+        padding-left: 30px !important;
+    }
+}    
+
+
+
+@media screen and (max-width: 900px) {
+  
+
+    .roster-container-left-teams,.roster-container-right-teams   {
+        display: block;
+        width: 100%;
+    }
+
+    .roster-container-right-teams {
+        padding-left: 30px !important;
+    }
+
+    .roster-container-right-teams {
+        margin-top: -30px;
+    }
+
+}  
+
+
+
+
+
+@media screen and (min-width: 1201px){
+    .mobile-menu, .mobile-only {
+        display: none !important;
+    }  
+    .roster-header .roster-header-left {
+        background: white !important;
+    }   
+
+    .roster-header {
+        position: fixed;
+        z-index: 100;
+        top: 0px;
+    } 
+    .roster-container {
+        margin-top: 80px;
+    } 
+
+    #roster-container {
+        margin-top: 80px;
+    }
+    
+}
+
+@media screen and (max-width: 1200px){
+    .roster-header-left {
+        display: none;
+        padding: 30px;
+    }  
+
+    .roster-header-left li {
+        display: block;
+        text-align: left;
+        margin-bottom: 10px;
+    }
+
+    .roster-header-left li a{
+        color: white;
+    }
+    
+    .roster-header-left {
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        z-index: 9999;
+        box-shadow: 0px 0px 6px 1px rgba(0,0,0,.2);
+    }
+
+    .roster-header .roster-main-menu .active {
+        color: #1a1a1a !important;
+
+    }
+
+    .roster-header > div {
+        float: none !important;
+        margin: 0 auto; 
+        text-align: center;
+    }
+
+    .roster-header-left {
+        margin-bottom: 15px !important; 
+    }
+
+    .roster-header-right li {
+        margin-bottom: 15px !important; 
+    }
+
+    .roster-main-menu a {
+        font-size: 18px;
+    }
+
+    .roster-header {
+        padding-bottom: 0px;
+    }
+    
+}
+
+
+
+
+
+
+
+
+.mobile-only i {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.team-listing li, .notification-group-listing li {
+    cursor: move;
+}
+
+
+
+.team-data-edit input {
+    width: 100%;
+}
+
+.team-data-edit > span, .notification-group-data-edit > span {
+    display: block;
+    margin-top: 10px;
+}
+
+.team-data-edit select, .notification-listing select, .notification-group-listing select, #attendance-listing select,select.custom-field-edit  {
+    height: 42px;
+    position: relative;
+    top: -1px !important;
+    border: 1px solid #e9eaea !important;
+}
+
+.team-data-edit, .notification-group-data-edit, .user-edit-form  {
+    display: none;
+    width: 100%;
+    padding-bottom: 5px;
+}
+
+.team-data-edit .member-field, .notification-group-data-edit .member-field {
+    width: calc(100% - 107px) !important;
+}
+
+.team-data-edit li, .notification-group-data-edit li  {
+    margin-top: 8px;
+}
+
+.team-data-edit .list-section .builder-action-buttons {
+    width: 112px;
+}
+
+
+
+
+
+
+.date span {
+    display: block;
+}
+
+.date-detail, .teams-heading {
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.time-detail {
+    font-weight: 300;
+    font-size: 12px;
+    margin-top: -7px;
+}
+
+.date-label-tooltip {
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.feature-box .repeat-select {
+    width: auto !important;
+}
+
+input::placeholder {
+    opacity: .4;
+}
+
+/* core roster table styling */
+/* #roster-container {
+    max-width: 40em !important;
+    max-height: 20em !important;
+    overflow: scroll !important;
+    position: relative !important;
+}
+  
+#roster-container table {
+    position: relative !important;
+    border-collapse: collapse !important;
+}
+  
+#roster-container td, #roster-container th {
+    padding: 0.25em !important;
+}
+  
+#roster-container thead th {
+    position: sticky !important;
+    top: 0 !important;
+    background: #000 !important;
+    color: #FFF !important;
+}
+  
+#roster-container thead th:first-child {
+    left: 0 !important;
+    z-index: 1 !important;
+}
+  
+#roster-container tbody td {
+    position: sticky !important;
+    left: 0 !important;
+    background: #FFF !important;
+    border-right: 1px solid #CCC !important;
+} */
+
+
+#roster-container {
+    width: 100% !important;
+    overflow: scroll;
+    position: relative;
+  }
+  
+  #roster-container table {
+    position: relative;
+    border-collapse: collapse;
+    border-width: 0px !important;
+  }
+  
+  #roster-container td, #roster-container th {
+    width: 195px;
+    text-align: center;
+    border-width: 0px;
+    border-right: 3px solid #fff;
+
+   
+  }
+
+  #roster-container tbody td, #roster-container tbody th {
+    padding: 0px !important;
+  }
+
+
+  
+  #roster-container thead th {
+    position: sticky;
+    position :-webkit-sticky;
+    top: 0;
+    color: white;
+    background: inherit !important;
+    border-right: 3px solid white;
+    z-index: 9998;
+  }
+  
+  #roster-container thead th:first-child {
+    left: 0;
+    z-index: 1;
+    box-shadow: 2px 0px 0px 0px #414042;
+    z-index: 9999;
+  }
+  
+  #roster-container tbody th {
+    position: sticky;
+    position :-webkit-sticky;
+    left: 0;
+    background: inherit !important;
+    box-shadow: 2px 0px 0px 0px #414042;
+    z-index: 9998;
+  }
+
+  #roster-container tbody tr:nth-child(odd) {
+      background: white;
+  }
+
+  #roster-container tbody tr:nth-child(even) {
+    background: #f1f2f2;
+}
+
+tbody .past-date, thead .past-date span, .dates-listing .past-date  {
+    opacity: .4;
+}
+
+.now {
+    filter: brightness(75%);
+}
+
+.now-icon {
+    font-size: 24px;
+    float: right;
+    top: 2px;
+    position: relative;
+    cursor: pointer;
+    /* display: none; */
+}
+
+.roster-data-input {
+    background-color: transparent !important;
+    border-width: 0px !important;
+    padding-top:3px !important;
+    padding-bottom: 3px !important;
+}
+
+select.roster-data-input {
+    width: 100%;
+}
+
+#roster-container .first-unavailable-row {
+    border-top: 3px solid #414042;
+}
+
+#roster-container select.roster-data-input {
+    height: 30px !important;
+}
+
+#roster-container .duplicate-item {
+    font-weight: 900;
+}
+
+h2 {
+    line-height: 1.4;
+}
+
+.notification-log-heading {
+    display: inline-block;
+}
+
+.get-notification-statuses {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.notification-log li span {
+    vertical-align: middle;
+}
+
+.notification-log, .notification-listing {
+    margin-top: 20px !important;
+}
+
+.shortcode {
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: 2px;
+    font-size: 12px;
+    background: #414042;
+    color: #fff;
+    display: inline-block !important;
+    margin-right: 4px;
+    margin-bottom: 4px;
+    border-radius: 3px;
+    padding: 4px 6px;
+    line-height: normal;
+    cursor: pointer;
+    margin-top: 0px !important;
+}
+
+.bulk-notifications .counter-number, .automated-notifications .counter-number-automated, .notification-listing .counter-number-automated-edit {
+    display: none;
+    opacity: 0.5;
+    font-size: 12px;
+    margin-top: 0px;
+}
+
+.field-explainer {
+    opacity: .5;
+    cursor: pointer;
+}
+
+.log-destination, .log-recipient {
+    word-wrap: break-word;
+}
+
+.feature-box .automated-shortcodes {
+    display: none;
+}
+
+.automated-notification-filters-list {
+    margin: 0px !important;
+}
+
+.automated-notification-filters-list li {
+    list-style: none !important;
+}
+
+.automated-notification-filters-list li select, .automated-notification-filters-list-edit li select {
+    width: auto !important;
+    margin-right: 8px;
+    margin-bottom: 8px;
+}
+
+
+.automated-notification-filters-list i, .automated-notification-filters-list-edit i {
+    font-size: 24px;
+    cursor: pointer;
+    margin-right: 10px;
+    position: relative;
+    top: 4px;
+}
+
+.automated-notification-filters-list .builder-action-buttons, .automated-notification-filters-list-edit .builder-action-buttons {
+    width: 73px;
+}
+
+.automated-notifications select.member {
+    display: none;
+}
+
+/* .automated-notification-filters-list li:first-child select {
+    display: none;
+} */
+
+.automated-notification-filters-list {
+    display: none;
+}
+
+.start-filter-display {
+    cursor: pointer;
+}
+
+.automated-notification-fields {
+    display: none;
+
+}
+
+.automated-notification-fields > span{
+    display: block;
+    margin-top: 10px;
+}
+
+.automated-time-edit-select {
+    width: 100%;
+}
+
+.notification-listing .automated-shortcodes {
+    display: none;
+}
+
+.notification-listing .counter-number-automated-edit {
+    display: none;
+}
+
+.automated-notification-filters-list-edit {
+    margin: 0px !important;
+}
+
+.automated-notification-filters-list-edit {
+    list-style: none !important;
+}
+
+.notification-listing label {
+    /* font-weight: 300; */
+    margin-bottom: 2px;
+    display: block;
+}
+
+
+
+.or-separator {
+    display: inline-block !important;
+}
+
+.automated-notification-filters-list li:last-child .or-separator  {
+    display: none !important;
+}
+
+.automated-notification-filters-list-edit li:last-child .or-separator  {
+    display: none !important;
+}
+
+.roster-container .save-to-pdf {
+    color: white !important;
+    border-color: white !important;
+}
+
+/* .roster-container-left-run-sheet {
+    height: calc(100vh - 80px);
+} */
+
+#wp-roster-editor, #wp-roster-toolbar {
+    background: white;
+}
+
+
+.ql-editor {
+    min-height: 500px;
+}
+
+.ql-container.ql-snow {
+    border: 1px solid #fff;
+}
+
+.ql-toolbar.ql-snow {
+    border: 1px solid #fff;
+}
+
+div#wp-roster-toolbar {
+    border-bottom: 3px solid #f1f2f2;
+}
+
+span.select-date {
+    margin-bottom: 20px !important;
+    display: block;
+}
+
+
+@media screen and (max-width: 1100px){
+    .roster-container-left-run-sheet {
+        height: inherit;
+        position: inherit;
+        width: 100%;
+        height: auto !important;
+    }
+
+    .roster-container-right-run-sheet {
+        width: 100%;
+        margin-left: inherit;
+    }
+
+}    
+
+.shortcodes-display {
+    display: block;
+    margin-top: 30px;
+}
+
+#roster-container td .clash-item {
+    background-color: #ca4a3c !important;
+    color: white !important;
+}
+
+.teams-menu-navigation li {
+    display: inline-block;
+    padding: 10px 20px;
+    border-right: 3px solid #f1f2f2;
+    cursor: pointer;
+}
+
+.teams-menu-navigation li:last-child {
+    border-width: 0px;
+}
+
+
+.teams-menu-navigation {
+    display: inline-block;
+    border-radius: 4px;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,.05);
+    margin: 0px !important;
+}
+
+.notification-groups-section, .teams-section {
+    display: none;
+}
+
+.members-section, .teams-section, .notification-groups-section {
+    margin-top: 80px !important;
+}
+
+.item-filter {
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,.05)!important;
+    border-radius: 4px !important;   
+    border-width: 2px !important;
+    border-style: solid !important;
+}
+
+.roster-container .search-icon {
+    position: relative;
+    float: right;
+    top: -30px;
+    right: 11px;
+    clear: both;
+    cursor: pointer;
+}
+
+.roster-container .search-icon-notifications {
+    top: -32px;
+}
+
+.item-filter-dates {
+    width: calc(100% - 40px) !important;
+}
+
+.roster-container .search-icon-dates {
+    right: 15px;
+}
+
+.zoom-to-now {
+    font-size: 24px;
+    top: 3px;
+    position: relative;
+    margin-right: 15px;
+    cursor: pointer;
+}
+@media screen and (min-width: 769px) {
+.roster-container .item-filter-notifications {
+    display: inline-block !important;
+    width: 150px;
+    float: right;
+    position: relative;
+    top: -2px;
+}}
+
+.date-time-input {
+    min-height: 42px;
+}
+
+.attendance-right {
+    float: right;
+}
+
+#attendance-listing li select, .edit-attendance, .attendance-right button, .roster-attendance .group-name {
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+
+
+.user-attendance-edit {
+    margin: 0px !important;
+    clear: both;
+}
+
+.attendance-right-icons i, .bulk-edit-buttons i {
+    margin-left: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #cbcbcb;
+    position: relative;
+    top: 2px;
+}
+
+.attended.active {
+    color: green;
+}
+.did-not-attend.active {
+    color: red;
+}
+.not-sure.active {
+    color: orange;
+}
+
+.roster-attendance {
+    border: 2px solid white;
+}
+
+.roster-attendance.attended {
+    border: 2px solid green;
+}
+
+.roster-attendance.did-not-attend {
+    border: 2px solid red;
+}
+
+.roster-attendance.not-sure {
+    border: 2px solid orange;
+}
+
+
+
+.attendance-statistics-for-date {
+    display: inline-block;
+    margin-right: 20px;
+}
+.attendance-statistics-for-date input {
+    width: 75px !important;
+    border-radius: 3px !important;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,.05);
+    background-color: white !important;
+    border-width: 0px !important;
+    
+}
+
+.attendance-statistics-for-date label {
+    margin-right: 5px;
+}
+
+.statistics-container {
+    margin-top: 30px;
+}
+
+.attendance-statistics-for-date input:not(.other)
+{
+    opacity: .5 !important;
+}
+
+
+.bulk-edit-buttons {
+    float: right;
+    padding-right: 12px;
+    padding-top: 8px;
+}
+
+.date-time-input-attendance {
+    width: 150px !important;
+    display: inline-block;
+    border-radius: 3px !important;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,.05);
+    background-color: #fff !important;
+    border-width: 0px !important;
+    margin-right: 10px;
+}
+
+.attendance-header {
+    margin-bottom: 10px;
+}
+
+
+@media screen and (max-width: 1150px){
+    #attendance-listing .attendance-right {
+        float:none;
+    }
+} 
+
+
+@media screen and (max-width: 375px){
+     .user-attendance-edit .attendance-right {
+        float:none;
+    }
+    .bulk-edit-buttons {
+        display: none;
+    }
+
+    .delete-attendance {
+        margin-bottom: 20px !important;
+        margin-top: 10px !important;
+    }
+
+} 
+
+
+#attendance-listing > li {
+    background: #fff;
+    list-style: none;
+    padding: 10px 15px;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,.05);
+    border-radius: 4px;
+    margin-bottom: 10px;
+    padding-bottom: 0px;
+}
+
+.attendance-right button:last-child{
+    margin-right: 0px;
+}
+
+.attendance-statistics-listing {
+    margin: 0px !important;
+}
+
+.attendance-statistics-listing span {
+    width: 14.1%;
+    display: inline-block;
+}
+
+.attendance-statistics-listing .list-header {
+    margin-top:30px;
+}
+
+@media screen and (max-width: 600px){
+.attendance-statistics-listing span {
+    display: block;
+    width: 100%;
+}
+.attendance-statistics-for-date input{
+    width: 100% !important;
+}
+
+.attendance-statistics-for-date {
+    width: 100% !important;
+    margin-right: 0px !important;
+    margin-bottom: 20px !important;
+  
+
+}
+}
+
+
+.attendance-heading {
+    margin-bottom: 20px;
+}
+
+.member-away {
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.member-away-section {
+    color: white;
+}
+
+.member-away-section i {
+    font-size: 24px;
+    position: relative;
+    top: 3px;
+}
+
+.member-away-section {
+    padding: 5px 10px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.member-away-section > span {
+    position: relative;
+    top: -2px;
+}
+
+#curve_chart {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+select.custom-field-edit {
+    width: 100%;
+}
+
+.list-header span {
+    vertical-align: middle;
+}
+
+.file-upload, .file-download {
+    cursor: pointer;
+    position: absolute;
+    margin-top: 5px;
+    height: 16px;
+}
+
+.file-upload {
+    margin-left: -20px;
+}
+
+.file-download {
+    margin-left: -40px;
+}
+
+.roster-data-input.file {
+    padding-right: 45px;
+}
+
+.file-upload-input-wp-roster {
+    opacity: 0;
+    position: absolute;
+    z-index: 99999;
+    box-sizing: border-box;
+    margin-left: -181px;
+    width: 100% !important;
+}
+
+.wp-roster-file-upload-label {
+    background: #fff;
+    padding: 7px 10px;
+    border-radius: 4px;
+    border: 2px dashed #e1e1e1 !important;
+    width: 100%;
+    display: block;
+    text-align: center;
+    color: #a7a9ac;
+    cursor: pointer;
+    box-sizing: border-box !important;
+    font-size: initial;
+}
